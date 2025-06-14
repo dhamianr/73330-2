@@ -14,28 +14,39 @@ body{
 }
 
 header{
-    position: fixed; /*Esto hace que el header se quede fijo en la parte superior*/
+    position: fixed;
     right: 0;
     top: 0;
-    z-index: 100; /*Esto hace que el header se muestre por arriba*/
+    z-index: 100;
     width: 100%;
-    display: flex; /*Esto hara que se pongan los elementos en linea*/
-    align-items: center; /*Centra verticalmente*/
-    justify-content: center; /*centro el header*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 15px 3%;
     background-color: transparent;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-collapse {
+    background-color: #343a40;
+    padding: 1rem;
+    border-radius: 0.25rem;
 }
 
 .degradado {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%); /* fondo de color gradiente */
-    position: relative; /* para que sea relativo al contenedor nos permite usar top, bottom, left, right */
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    padding-top: 80px; /* Añadimos padding-top para compensar el header fijo */
 }
 section{
     padding: 0 8%;
