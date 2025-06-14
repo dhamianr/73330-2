@@ -1,0 +1,92 @@
+/*Normalizamos con el * de todo justamente :D */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Esto mantiene el ancho y alto a pesar de padding y border*/
+    list-style: none; /*quitar los puntos y decoraciones de las listas*/
+    text-decoration: none; /*esto quita el subrayado de los enlaces */
+    color:white;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    position: fixed; /*Esto hace que el header se quede fijo en la parte superior*/
+    right: 0;
+    top: 0;
+    z-index: 100; /*Esto hace que el header se muestre por arriba*/
+    width: 100%;
+    display: flex; /*Esto hara que se pongan los elementos en linea*/
+    align-items: center; /*Centra verticalmente*/
+    justify-content: center; /*centro el header*/
+    padding: 15px 3%;
+    background-color: transparent;
+}
+
+.degradado {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%); /* fondo de color gradiente */
+    position: relative; /* para que sea relativo al contenedor nos permite usar top, bottom, left, right */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+section{
+    padding: 0 8%;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.footer .footer-content {
+    text-align: center;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid white; /*Esto es un subrayado blanco que aparece cuando me posiciono arriba*/
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img{
+    width: 450px;
+    margin: 10% 0 0 3%;
+    height: auto;
+    transition: all 5s linear; /*Esto hace que la transicion sea lineal*/
+}
+
+.img img:hover {
+    width: 500px;
+    opacity: 0.6;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text h1 {
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 30px;
+}
+.text p {
+    font-size: 120%;
+    margin-bottom: 40px;
+    line-height: 1.9;
+}
