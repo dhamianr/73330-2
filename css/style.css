@@ -1,103 +1,108 @@
+@charset "UTF-8";
 /*Normalizamos con el * de todo justamente :D */
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; /*Esto mantiene el ancho y alto a pesar de padding y border*/
-    list-style: none; /*quitar los puntos y decoraciones de las listas*/
-    text-decoration: none; /*esto quita el subrayado de los enlaces */
-    color:white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*Esto mantiene el ancho y alto a pesar de padding y border*/
+  list-style: none; /*quitar los puntos y decoraciones de las listas*/
+  text-decoration: none;
+  color: #ffffff;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: #000000;
 }
 
-header{
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 3%;
-    background-color: transparent;
-}
-
-.navbar {
-    width: 100%;
-}
-
-.navbar-collapse {
-    background-color: #343a40;
-    padding: 1rem;
-    border-radius: 0.25rem;
+section {
+  padding: 0 8%;
 }
 
 .degradado {
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding-top: 80px; /* Añadimos padding-top para compensar el header fijo */
-}
-section{
-    padding: 0 8%;
-}
-
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 2rem 0;
-    margin-top: auto;
-}
-
-.footer .footer-content {
-    text-align: center;
-}
-
-.navlist a:hover {
-    border-bottom: 2px solid white; /*Esto es un subrayado blanco que aparece cuando me posiciono arriba*/
-}
-
-.img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img img{
-    width: 450px;
-    margin: 10% 0 0 3%;
-    height: auto;
-    transition: all 5s linear; /*Esto hace que la transicion sea lineal*/
-}
-
-.img img:hover {
-    width: 500px;
-    opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 80px; /* Añadimos padding-top para compensar el header fijo */
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 .text h1 {
-    font-size: 50px;
-    line-height: 1;
-    margin: 0 0 30px;
+  font-size: 50px;
+  line-height: 1;
+  margin: 0 0 30px;
 }
+
 .text p {
-    font-size: 120%;
-    margin-bottom: 40px;
-    line-height: 1.9;
+  font-size: 120%;
+  margin-bottom: 40px;
+  line-height: 1.9;
 }
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img img {
+  width: 450px;
+  margin: 10% 0 0 3%;
+  height: auto;
+  transition: all 5s linear; /*Esto hace que la transicion sea lineal*/
+}
+
+.img img:hover {
+  width: 500px;
+  opacity: 0.6;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 3%;
+  background-color: transparent;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-collapse {
+  background-color: #343a40;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid #ffffff; /*Esto es un subrayado blanco que aparece cuando me posiciono arriba*/
+}
+
+.footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer .footer-content {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

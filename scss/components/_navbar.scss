@@ -1,0 +1,15 @@
+@use "variables";
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-collapse {
+  background-color: #343a40;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid variables.$secondary-color; /*Esto es un subrayado blanco que aparece cuando me posiciono arriba*/
+}

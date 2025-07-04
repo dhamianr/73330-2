@@ -1,0 +1,32 @@
+@use "variables";
+
+/*Normalizamos con el * de todo justamente :D */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*Esto mantiene el ancho y alto a pesar de padding y border*/
+  list-style: none; /*quitar los puntos y decoraciones de las listas*/
+  text-decoration: none;
+  color: variables.$secondary-color;
+}
+
+body {
+  background-color: variables.$bg-color;
+}
+section {
+  padding: 0 8%;
+}
+
+.degradado {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 80px; /* Añadimos padding-top para compensar el header fijo */
+}
