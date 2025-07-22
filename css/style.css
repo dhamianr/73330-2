@@ -82,6 +82,7 @@ header {
 
 .navbar {
   width: 100%;
+  padding: 1%;
 }
 
 .navbar-collapse {
@@ -103,6 +104,21 @@ header {
 
 .footer .footer-content {
   text-align: center;
+}
+
+.rotating-image {
+  width: 200px;
+  height: 200px;
+  animation: rotate360 4s ease-in-out;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
